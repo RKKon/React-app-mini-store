@@ -1,0 +1,19 @@
+.text-align {
+  text-align: center;
+}
+
+/* .card {
+  display: flex;
+  flex-direction: column;
+} */
+.card .card-content {
+  padding: 5px 13px 10px 15px;
+  border-radius: 0 0 2px 2px;
+  /* flex-grow: 1; */
+}
+.padding {
+  padding: 8px 10px 8px 10px;
+}
+.fs-27 {
+  font-size: 27px;
+}
