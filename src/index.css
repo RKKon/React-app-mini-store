@@ -20,6 +20,7 @@ nav {
   min-height: calc(100vh - 70px - 64px);
   padding: 1.5rem 0;
 }
+
 .search-btn {
   position: absolute;
   top: 0;
@@ -38,12 +39,14 @@ label:not(:last-child) {
   z-index: 5;
   padding: 10px 10px 5px 10px;
 }
+
 @media (min-width: 767px) {
   .cart {
     top: 5rem;
     bottom: unset;
   }
 }
+
 /* .cart-quantity {
 
 } */
@@ -67,6 +70,7 @@ label:not(:last-child) {
   right: 0.5rem;
   color: #fff;
 }
+
 .basket-delete {
   cursor: pointer;
 }
@@ -76,6 +80,7 @@ label:not(:last-child) {
     top: 70%;
     opacity: 0;
   }
+
   to {
     top: 50%;
     opacity: 1;
@@ -90,7 +95,7 @@ label:not(:last-child) {
 
 #toast-container {
   top: 3rem !important;
-  animation: fade-in 0.25s ease-in-out ;
+  animation: fade-in 0.25s ease-in-out;
 }
 
 @keyframes fade-in {
@@ -98,8 +103,21 @@ label:not(:last-child) {
     opacity: 0;
     transform: translateY(2rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.footer_color {
+  background-color: #fdd835d1
+}
+
+.thanksMessage {
+  position: absolute;
+  margin: 211px 431px;
+  z-index: 9;
+  width: 330px;
+  height: 100px;
 }
