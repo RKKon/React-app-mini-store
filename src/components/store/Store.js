@@ -7,12 +7,14 @@ import Cart from "../cart/Cart";
 import BasketList from "../basketList/BasketList";
 import AddItemMessage from "../addItemMessage/AddItemMessage";
 import ThanksMessage from "../thanksMessage/ThanksMessage";
+import ErrorBoundary from "../errorBoundary/ErrorBoundary";
+import UseLocalStorage from "../useLocalStorage/UseLocalStorage";
 
 const Store = () => {
   const [goods, setGoods] = useState([]);
   const [extraGoods, setExtraGoods] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [order, setOrder] = useState([]);
+  const [order, setOrder] = UseLocalStorage('cart', []);;
   const [isBasketShow, setBasketShow] = useState(false);
   const [addToBasketItemMessage, setAddToBasketItemMessage] = useState("");
   const [showThanksMessage, setShowThanksMessage] = useState(false);
@@ -117,7 +119,6 @@ const Store = () => {
       .then((response) => response.json())
       .then((data) => {
         setExtraGoods(data.shop);
-        console.log(data.shop);
         setLoading(false);
       })
       .catch((err) => {
@@ -128,12 +129,14 @@ const Store = () => {
 
   return (
     <main className="container content">
-      <Cart quantity={order.length} handleBasketShow={handleBasketShow} />
-      {loading ? (
-        <PreLoader />
-      ) : (
-        <GoodsList extraGoods={extraGoods} goods={goods} addToBAsket={addToBAsket} />
-      )}
+      <ErrorBoundary> <Cart quantity={order.length} handleBasketShow={handleBasketShow} /> </ErrorBoundary>
+      <ErrorBoundary>
+        {loading ? (
+          <PreLoader />
+        ) : (
+          <GoodsList extraGoods={extraGoods} goods={goods} addToBAsket={addToBAsket} />
+        )}
+      </ErrorBoundary>
       {showThanksMessage ? <ThanksMessage /> : null}
       {isBasketShow && (
         <BasketList
