@@ -27,18 +27,20 @@ const GoodsList = (props) => {
   const myExtraGoods =
     extraGoodsShown && extraGoods.length
       ? extraGoods.slice(0, offset).map((el) => {
-          return <GoodsItem addToBAsket={addToBAsket} key={el.mainId} {...el} />;
-        })
+        return <GoodsItem addToBAsket={addToBAsket} key={el.mainId} {...el} />;
+      })
       : null;
 
   return (
-    <div className="GoodsList">
-      {myGoods}
-      {myExtraGoods}
+    <>
+      <div className="GoodsList">
+        {myGoods}
+        {myExtraGoods}
+      </div>
       <button disabled={disable} onClick={shoWExtraGoods} className="btn goodsBtn">
         See more items
       </button>
-    </div>
+    </>
   );
 };
 

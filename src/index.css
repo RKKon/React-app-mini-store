@@ -111,12 +111,12 @@ label:not(:last-child) {
 }
 
 .footer_color {
-  background-color: #fdd835d1
+  background-color: #fdd835d1;
 }
 
 .thanksMessage {
-  position: absolute;
-  margin: 211px 431px;
+  position: fixed;
+  margin: 211px 23%;
   z-index: 9;
   width: 330px;
   height: 100px;
