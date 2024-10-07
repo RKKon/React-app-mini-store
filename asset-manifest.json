@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/React-app-mini-store/static/css/main.701528be.css",
-    "main.js": "/React-app-mini-store/static/js/main.ca0996d8.js",
+    "main.css": "/React-app-mini-store/static/css/main.f5a07816.css",
+    "main.js": "/React-app-mini-store/static/js/main.798c6ea5.js",
+    "static/media/Linkedin.png": "/React-app-mini-store/static/media/Linkedin.a71d6e9c239b95c18cca.png",
     "static/media/instagram.svg": "/React-app-mini-store/static/media/instagram.c84ed93167b9fbc4db3ad019e63d67b5.svg",
     "index.html": "/React-app-mini-store/index.html",
     "static/media/Facebook.svg": "/React-app-mini-store/static/media/Facebook.2eb6a00b9083bf816f4b8303e7e93e7d.svg",
     "static/media/telegram.svg": "/React-app-mini-store/static/media/telegram.f50c53492da092e44ad4e6455d9e260b.svg",
-    "main.701528be.css.map": "/React-app-mini-store/static/css/main.701528be.css.map",
-    "main.ca0996d8.js.map": "/React-app-mini-store/static/js/main.ca0996d8.js.map"
+    "main.f5a07816.css.map": "/React-app-mini-store/static/css/main.f5a07816.css.map",
+    "main.798c6ea5.js.map": "/React-app-mini-store/static/js/main.798c6ea5.js.map"
   },
   "entrypoints": [
-    "static/css/main.701528be.css",
-    "static/js/main.ca0996d8.js"
+    "static/css/main.f5a07816.css",
+    "static/js/main.798c6ea5.js"
   ]
 }
